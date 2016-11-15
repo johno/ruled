@@ -1,0 +1,18 @@
+{
+  "name": "ruled-app",
+  "description": "Mini app to create css debug grids",
+  "author": "John Otander",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": "johnotander/ruled-app",
+  "license": "MIT",
+  "dependencies": {
+    "cxs": "^2.0.0",
+    "next": "^1.1.1",
+    "ruled": "^1.0.1"
+  },
+  "devDependencies": {}
+}
