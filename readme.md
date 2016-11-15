@@ -1,4 +1,4 @@
-# ⊟ ruled-app
+# ⊟ [ruled](https://ruled.now.sh/)
 
 Mini app to create css debug grids.
 
