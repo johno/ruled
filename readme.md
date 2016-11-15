@@ -1,9 +1,15 @@
 # ruled-app
 
 Mini app to create css debug grids.
-This was built around [`ruled`](https://github.com/jxnblk/ruled) by [@jxnblk](https://twitter.com/jxnblk).
 
-## Installation
+##### Built with
+
+- [`ruled`](https://github.com/jxnblk/ruled)
+- [`axs`](https://github.com/jxnblk/axs)
+- [`cxs`](https://github.com/jxnblk/cxs)
+- [`next`](https://github.com/zeit/next.js)
+
+#### Installation
 
 ```bash
 git clone https://github.com/johnotander/ruled-app
@@ -13,11 +19,11 @@ npm run dev
 open http://localhost:3000
 ```
 
-## License
+#### License
 
 MIT
 
-## Contributing
+#### Contributing
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
@@ -25,8 +31,6 @@ MIT
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-Crafted with <3 by John Otander ([@4lpine](https://twitter.com/4lpine)).
-
 ***
 
-> This package was initially generated with [yeoman](http://yeoman.io) and the [p generator](https://github.com/johnotander/generator-p.git).
+> Crafted with <3 by John Otander ([@4lpine](https://twitter.com/4lpine)).
