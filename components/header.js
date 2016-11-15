@@ -10,16 +10,24 @@ export default () => (
       <Box py4 mx='auto' css={cx.container}>
         <Box border='bottom' css={{borderWidth: '.5rem'}}>
           <Heading level={1} size={[1, null, 0]}>
-            Ruled
+            ⊟ Ruled
           </Heading>
         </Box>
         <Box width={[1, 1/2]}>
           <Text is='p' bold size={[4, 3 ]} mt2>
             Create css debug grids using background gradients
           </Text>
-          <Text size={4} p0 my2 grape1 css={cx.pre}>
-            npm i ruled
-          </Text>
+          <Text
+            is='a'
+            size={4}
+            p0
+            my2
+            grape1
+            css={cx.pre}
+            href='https://github.com/johnotander/ruled'
+            style={{textDecoration: 'none'}}
+            children='GitHub'
+          />
         </Box>
       </Box>
     </Box>
