@@ -1,11 +1,16 @@
 import React from 'react'
-import Head from 'next/head'
 
 import {
-  Flex, Box, Text, Heading, NavLink, Container
+  Flex, Box, Text, Heading
 } from 'axs'
 
 import ruled from 'ruled'
+
+import Layout from '../components/layout'
+import Header from '../components/header'
+import Container from '../components/container'
+
+import cx from '../cx'
 
 export default class extends React.Component {
   constructor () {
@@ -38,43 +43,10 @@ export default class extends React.Component {
     }
 
     return (
-      <div style={sx}>
-        <Head>
-          <title>Ruled</title>
-          <meta charSet='utf-8' />
-          <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-          <style children={`
-            * { box-sizing: border-box; }
-            body {
-              font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-              line-height: 1.5;
-              margin: 0;
-            }
-          `} />
-        </Head>
+      <Layout style={sx}>
         <Box>
-          <Box is='header' px3 mb4>
-            <Box px3 py4 mb4 white bgViolet>
-              <Box py4 mx='auto' css={cx.container}>
-                <Flex css={cx.flex}>
-                  <Box border='right' css={cx.pipe} pr3 mr3>
-                  <Heading level={1} size={[1, null, 0]}>
-                    Ruled
-                  </Heading>
-                </Box>
-                <Box width={[1, 1/2]}>
-                  <Text is='p' bold size={[4, 3 ]} mt2>
-                    Create css debug grids using background gradients
-                  </Text>
-                  <Text size={4} p0 my2 grape1 css={cx.pre}>
-                    npm i ruled
-                  </Text>
-                </Box>
-                </Flex> 
-              </Box>
-            </Box>
-          </Box>
-          <Box mx='auto' css={cx.container}>
+          <Header />
+          <Container>
             <Box>
               <Text
                 display='block'
@@ -187,39 +159,9 @@ export default class extends React.Component {
   backgroundSize: '${sx.backgroundSize}'
 \}
 `} />
-          </Box>
+          </Container>
         </Box>
-      </div>
+      </Layout>
     )
-  }
-}
-
-const cx = {
-  pipe: {
-    borderWidth: 4,
-    '@media screen and (max-width:40em)': {
-      border: 0
-    }
-  },
-  flex: {
-    flexWrap: 'wrap',
-    alignItems: 'center'
-  },
-  pre: {
-    fontFamily: 'Menlo, monospace',
-    maxWidth: '100%',
-    overflow: 'auto',
-  },
-  container: {
-    maxWidth: 1024
-  },
-  input: {
-    ':focus': {
-      borderColor: 'rgb(121, 80, 242)',
-      outline: 'none'
-    },
-    color: 'inherit',
-    fontFamily: 'inherit',
-    fontSize: 'inherit'
   }
 }
