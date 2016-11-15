@@ -12,7 +12,7 @@ Mini app to create css debug grids.
 #### Installation
 
 ```bash
-git clone https://github.com/johnotander/ruled-app
+git clone https://github.com/johnotander/ruled
 cd ruled-app
 npm i
 npm run dev
