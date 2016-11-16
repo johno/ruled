@@ -5,7 +5,7 @@ import Container from './container'
 import cx from '../cx'
 
 export default () => (
-   <Box bgGray2 mt3 p3>
+   <Box bgGray2 mt4 p3>
       <Text size6 gray6 css={{textAlign: 'center'}}>
         <Text
           is='a'
